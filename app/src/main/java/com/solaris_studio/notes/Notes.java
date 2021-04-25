@@ -1,16 +1,22 @@
 package com.solaris_studio.notes;
 
 public class Notes {
+    private int id;
     private String title;
     private String description;
     private String dayOfWeek;
     private int priority;
 
-    public Notes(String title, String description, String dayOfWeek, int priority) {
+    public Notes(int id, String title, String description, String dayOfWeek, int priority) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.dayOfWeek = dayOfWeek;
         this.priority = priority;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getTitle() {
